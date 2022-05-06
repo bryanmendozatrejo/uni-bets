@@ -1,7 +1,7 @@
 .main-background {
     max-width: 100%;
     height: 20%;
-    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-school-season-back-to-school-season-blue-cartoon-image_11842.jpg");
+    background-image: url("../images/background-moving.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,11 +14,20 @@
 }
 
 .main-title {
+    padding: 1vw;
     width: 100%;
     height: auto;
     /* Magic! */
-    max-width: 50vw
+    max-width: 50vw;
     
+}
+
+.home-title-logo {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 20vw;
 }
 
 img {
@@ -26,9 +35,45 @@ img {
     height: auto;
 }
 
+#vs {
+  width: 10%;
+  height: 10%;
+  display: flex;
+  justify-content: auto;
+}
+
 .team-images {
     display: flex;
     justify-content: space-around;
+}
+.bets {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#betLabels {
+  font-size: 1.9vw;
+}
+
+#bet-amount {
+  width: 60%;
+  height: auto;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+#bet-amount:focus {
+  border: 3px solid #555;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .score-container {
@@ -37,4 +82,218 @@ img {
     align-items: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 3.2vw;
+}
+
+#cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+$green: #1ECD97;
+$gray: #bbbbbb;
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  top: 50%;
+  left: 50%;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+}
+
+#bet-button {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid #1ECD97;
+  color: #1ECD97;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+#bet-button:hover {
+  color: white;
+  background: #1ECD97;
+}
+#bet-button:active {
+  letter-spacing: 2px;
+}
+#bet-button:after {
+  content: "BET"; 
+}
+
+.onclic {
+  width: 40px;
+  border-color: #bbbbbb;
+  border-width: 3px;
+  font-size: 0;
+  border-left-color: #1ECD97;
+  -webkit-animation: rotating 2s 0.25s linear infinite;
+          animation: rotating 2s 0.25s linear infinite;
+}
+.onclic:after {
+  content: "";
+}
+.onclic:hover {
+  color: #1ECD97;
+  background: white;
+}
+
+.validate {
+  font-size: 13px;
+  color: white;
+  background: #1ECD97;
+}
+.validate:after {
+  font-family: "FontAwesome";
+  content: "";
+}
+
+@-webkit-keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*login button syle -- START -- */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+
+/*.container already exists = overrides previous info style.*/
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  top: 50%;
+  left: 50%;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
+body {
+  background: #527eb8; /* fallback for old browsers */
+  background-image: url("../images/login-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+
+/* login button style -- END -- */
+
+.hide {
+  display: none;
 }
