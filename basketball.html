@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="scripts/config.js" charset="utf-8"></script>
+    <title>Basketball</title>
+</head>
+<body>
+  <div class="main-background">
+    <img class="main-title" src="images/Asset 1.png" alt="">
+  </div>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <button class=" navbar-brand btn btn-sm btn-outline-secondary" type="button" onclick="signOut()">Sign Out</button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">School Teams</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="basketball.html">Basketball</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="soccer.html">Soccer</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <span id="points" class="nav-link" href="#"></span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+
+    <div id="test-container"></div>
+    
+    <script src="scripts/basketball.js"  charset="utf-8"></script>
+    <script src="scripts/remote.js"  charset="utf-8"></script>
+    <!--
+    <script src="scripts/bet.js" charset="utf-8"></script>
+    <script src="scripts/login.js" charset="utf-8"></script>
+    -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
